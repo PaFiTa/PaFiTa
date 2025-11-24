@@ -1,0 +1,157 @@
+:root {
+  --main-bg-color: #f0f0f0;
+  --header-footer-bg-color: #333333;
+  --text-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: #121212;
+    --header-footer-bg-color: #1f1f1f;
+    --text-color: #ffffff;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
+  background-color: var(--header-footer-bg-color);
+  color: var(--text-color);
+}
+header img.logo {
+  height: 4vh;
+  margin-top: 0.5vh;
+  float: left;
+  animation: logo-spin 20s linear infinite;
+  transition: filter 0.3s ease-in-out;
+}
+header img.logo:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+  filter: drop-shadow(5px 5px 5px var(--text-color));
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}
+@media (max-width: 801px) {
+  header nav {
+    display: none;
+  }
+}
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 2vh;
+  transition: transform 0.3s ease-in-out;
+}
+header nav a:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px var(--text-color));
+  transform: scale(1.1);
+}
+header h1.menuName {
+  display: none;
+}
+@media screen and (max-width: 801px) {
+  header h1.menuName {
+    display: block;
+    position: absolute;
+    top: 0.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4vh;
+  }
+}
+header .menu-icon {
+  display: none;
+}
+@media (max-width: 801px) {
+  header .menu-icon {
+    display: block;
+    position: absolute;
+    right: 2vh;
+    width: 3vh;
+    max-height: 5vh;
+    cursor: pointer;
+  }
+  header .menu-icon span {
+    width: 3vh;
+    height: 1vh;
+    background: none;
+    transition: 0.4s;
+  }
+}
+@media screen and (max-width: 801px) and (max-width: 501px) {
+  header .menu-icon span.span3 {
+    display: none;
+  }
+}
+header .mobile-nav {
+  display: none;
+}
+header .mobile-nav.top-menu {
+  display: flex;
+  border-radius: 0 0 0 25px;
+  flex-direction: column;
+  position: absolute;
+  top: 5vh;
+  right: 0;
+  width: 50vw;
+  background-color: var(--header-footer-bg-color);
+  -webkit-border-radius: 0 0 0 25px;
+  -moz-border-radius: 0 0 0 25px;
+  -ms-border-radius: 0 0 0 25px;
+  -o-border-radius: 0 0 0 25px;
+}
+@media screen and (max-width: 501px) {
+  header .mobile-nav.top-menu {
+    width: 100vw;
+    border-radius: 0 0 25px 25px;
+    -webkit-border-radius: 0 0 25px 25px;
+    -moz-border-radius: 0 0 25px 25px;
+    -ms-border-radius: 0 0 25px 25px;
+    -o-border-radius: 0 0 25px 25px;
+  }
+}
+header .mobile-nav.top-menu a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 2vh;
+  transition: background-color 0.3s ease-in-out;
+}
+header .mobile-nav.top-menu a:hover {
+  cursor: pointer;
+  background-color: var(--main-bg-color);
+  filter: drop-shadow(2px 2px 2px var(--text-color));
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
+  background-color: var(--header-footer-bg-color);
+  color: var(--text-color);
+}/*# sourceMappingURL=style.css.map */
