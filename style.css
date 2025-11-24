@@ -154,4 +154,15 @@ footer {
   text-align: center;
   background-color: var(--header-footer-bg-color);
   color: var(--text-color);
+  font-size: xx-large;
+}
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+footer a:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px var(--text-color));
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
