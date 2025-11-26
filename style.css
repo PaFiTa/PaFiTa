@@ -188,7 +188,9 @@ main {
   top: 5vh;
   left: 0;
   background-color: var(--main-bg-color);
-  text-align: center;
+  text-align: justify;
+  -moz-text-align-last: center;
+       text-align-last: center;
 }
 main h1 {
   margin: 1vw;
@@ -196,6 +198,12 @@ main h1 {
 }
 main section {
   font-size: xx-large;
+  margin-right: 2.5vw;
+}
+@media screen {
+  main section {
+    font-size: large;
+  }
 }
 main section.front-end {
   margin: 2.5vw;
@@ -242,13 +250,12 @@ main section.front-end img.frontImg:hover {
 main section.front-end div.front-end-cont {
   max-width: 100%;
   margin: 0 2.5vw;
-  width: 60vw;
+  width: 90vw;
   float: right;
 }
 @media screen and (max-width: 801px) {
   main section.front-end div.front-end-cont {
     float: none;
-    width: 100%;
   }
 }
 main section.front-end div.front-end-cont h1 {
