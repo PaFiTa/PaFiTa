@@ -176,6 +176,7 @@ main section.front-end img.frontImg:hover {
   -o-transition: all 0.5s ease-in-out;
 }
 main section.front-end div.front-end-cont {
+  font-size: 2rem;
   max-width: 100%;
   margin: 0 2.5vw;
   width: 60vw;
@@ -248,7 +249,19 @@ main section.styling {
   }
   main section.front-end div.front-end-cont {
     float: none;
-    width: 100%;
+    width: 90vw;
+  }
+  main section.front-end div.front-end-cont h2 {
+    text-align: center;
+  }
+  main section.front-end div.front-end-cont p {
+    padding: 1vh 0;
+    border: var(--header-footer-bg-color) 2px solid;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
   }
 }
 @media screen and (max-width: 801px) and (max-width: 501px) {
@@ -271,7 +284,7 @@ main section.styling {
     fill: whitesmoke;
   }
 }
-@media screen {
+@media screen and (max-width: 401px) {
   main section {
     font-size: large;
   }
