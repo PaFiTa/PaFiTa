@@ -85,9 +85,23 @@ header {
     }
     .menu-icon {
         display: none;
-        .span3 {
-            @media screen and (max-width: 501px) {
-                display: none;
+        @media screen and (max-width: 801px) {
+            display: block;
+            position: absolute;
+            right: 2vh;
+            width: 3vh;
+            max-height: 5vh;
+            cursor: pointer;
+            span {
+                width: 3vh;
+                height: 1vh;
+                background: none;
+                transition: 0.4s;
+                @media screen and (max-width: 501px) {
+                    &.span3 {
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -195,7 +209,7 @@ main {
         img.frontImg {
             border-radius: 100%;
             outline: 5px solid var(--text-color);
-            margin: 5vw;
+            margin: 7vw 6vw;
             height: 30.5vh;
             transition: all 0.5s ease-in-out;
             -webkit-transition: all 0.5s ease-in-out;
@@ -222,7 +236,7 @@ main {
         div.front-end-cont {
             max-width: 100%;
             margin: 0 2.5vw;
-            width: 60vw;
+            width: 55vw;
             float: right;
             h1 {
                 margin: 1vw;
@@ -271,7 +285,7 @@ main {
         img.styleImg {
             border-radius: 100%;
             outline: 5px solid var(--text-color);
-            margin: 5vw;
+            margin: 5vw 6vw;
             height: 30.5vh;
             transition: all 0.5s ease-in-out;
             -webkit-transition: all 0.5s ease-in-out;
@@ -303,7 +317,7 @@ main {
             max-width: 100%;
             margin: 0 2.5vw;
             margin-bottom: 10vh;
-            width: 60vw;
+            width: 55vw;
             float: left;
             @media screen and (max-width: 801px) {
                 max-width: 90vw;

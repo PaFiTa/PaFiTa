@@ -81,8 +81,24 @@ header h1.menuName {
 header .menu-icon {
   display: none;
 }
-@media screen and (max-width: 501px) {
-  header .menu-icon .span3 {
+@media screen and (max-width: 801px) {
+  header .menu-icon {
+    display: block;
+    position: absolute;
+    right: 2vh;
+    width: 3vh;
+    max-height: 5vh;
+    cursor: pointer;
+  }
+  header .menu-icon span {
+    width: 3vh;
+    height: 1vh;
+    background: none;
+    transition: 0.4s;
+  }
+}
+@media screen and (max-width: 801px) and (max-width: 501px) {
+  header .menu-icon span.span3 {
     display: none;
   }
 }
@@ -203,7 +219,7 @@ main section.front-end {
 main section.front-end img.frontImg {
   border-radius: 100%;
   outline: 5px solid var(--text-color);
-  margin: 5vw;
+  margin: 7vw 6vw;
   height: 30.5vh;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -230,7 +246,7 @@ main section.front-end img.frontImg:hover {
 main section.front-end div.front-end-cont {
   max-width: 100%;
   margin: 0 2.5vw;
-  width: 60vw;
+  width: 55vw;
   float: right;
 }
 main section.front-end div.front-end-cont h1 {
@@ -281,7 +297,7 @@ main section.styling {
 main section.styling img.styleImg {
   border-radius: 100%;
   outline: 5px solid var(--text-color);
-  margin: 5vw;
+  margin: 5vw 6vw;
   height: 30.5vh;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -315,7 +331,7 @@ main section.styling div.styling-cont {
   max-width: 100%;
   margin: 0 2.5vw;
   margin-bottom: 10vh;
-  width: 60vw;
+  width: 55vw;
   float: left;
 }
 @media screen and (max-width: 801px) {
