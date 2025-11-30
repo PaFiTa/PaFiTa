@@ -85,8 +85,10 @@ header {
     }
     .menu-icon {
         display: none;
-        @media screen and (max-width: 501px) {
-            display: none;
+        .span3 {
+            @media screen and (max-width: 501px) {
+                display: none;
+            }
         }
     }
 }

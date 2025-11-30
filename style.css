@@ -82,7 +82,7 @@ header .menu-icon {
   display: none;
 }
 @media screen and (max-width: 501px) {
-  header .menu-icon {
+  header .menu-icon .span3 {
     display: none;
   }
 }
