@@ -23,14 +23,6 @@
   -o-transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 header {
   position: fixed;
   top: 0;
@@ -59,11 +51,14 @@ header nav {
   align-items: center;
   font-size: 3vh;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 801px) {
   header nav {
     display: none;
   }
 }
+=======
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
 header nav a {
   color: var(--text-color);
   text-decoration: none;
@@ -81,6 +76,7 @@ header h1.menuName {
 header .menu-icon {
   display: none;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 501px) {
   header .menu-icon {
     display: none;
@@ -88,6 +84,9 @@ header .menu-icon {
 }
 
 .mobile-nav {
+=======
+header .mobile-nav {
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
   display: none;
 }
 
@@ -105,6 +104,7 @@ header .menu-icon {
   -ms-border-radius: 0 0 0 25px;
   -o-border-radius: 0 0 0 25px;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 501px) {
   .mobile-nav.top-menu {
     width: 100vw;
@@ -116,6 +116,9 @@ header .menu-icon {
   }
 }
 .mobile-nav.top-menu a {
+=======
+header .mobile-nav.top-menu a {
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
   color: var(--text-color);
   text-decoration: none;
   padding: 2vh;
@@ -130,11 +133,14 @@ header .menu-icon {
 .rect {
   fill: black;
 }
+<<<<<<< HEAD
 @media screen and (prefers-color-scheme: light) {
   .rect {
     fill: white;
   }
 }
+=======
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
 
 footer {
   position: fixed;
@@ -184,6 +190,7 @@ main section {
   margin: 2.5vw;
   margin-bottom: 5vh;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 801px) {
   main section {
     font-size: x-large;
@@ -194,6 +201,8 @@ main section {
     font-size: large;
   }
 }
+=======
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
 main section.front-end {
   width: 96vw;
   height: 40.5vh;
@@ -219,15 +228,22 @@ main section.front-end img.frontImg {
 main section.front-end img.frontImg:hover {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+<<<<<<< HEAD
   outline: 5px solid var(--header-footer-bg-color);
   filter: drop-shadow(5px 5px 5px var(--text-color));
   -webkit-filter: drop-shadow(5px 5px 5px var(--text-color));
+=======
+  outline: 5px solid var(var(--header-footer-bg-color));
+  filter: blur(0px) drop-shadow(5px 5px 5px var(--text-color)) opacity(1);
+  -webkit-filter: blur(0px) drop-shadow(5px 5px 5px var(--text-color)) opacity(1);
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
 }
 main section.front-end div.front-end-cont {
+  font-size: 2rem;
   max-width: 100%;
   margin: 0 2.5vw;
   width: 60vw;
@@ -274,6 +290,7 @@ main section.front-end div.front-end-cont p a:hover {
   -o-transition: transform 0.3s ease-in-out;
 }
 main section.styling {
+<<<<<<< HEAD
   width: 96vw;
   margin: 2.5vw;
   margin-bottom: 5vh;
@@ -373,6 +390,30 @@ main section.styling div.styling-cont p a:hover {
   -o-transition: transform 0.3s ease-in-out;
 }
 
+=======
+  display: none;
+}
+
+@media (max-width: 801px) {
+  header nav {
+    display: none;
+  }
+  header .menu-icon {
+    display: block;
+    position: absolute;
+    right: 2vh;
+    width: 3vh;
+    max-height: 5vh;
+    cursor: pointer;
+  }
+  header .menu-icon span {
+    width: 3vh;
+    height: 1vh;
+    background: none;
+    transition: 0.4s;
+  }
+}
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
 @media screen and (max-width: 801px) {
   header h1.menuName {
     display: block;
@@ -391,7 +432,23 @@ main section.styling div.styling-cont p a:hover {
   }
   main section.front-end div.front-end-cont {
     float: none;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 90vw;
+  }
+  main section.front-end div.front-end-cont h2 {
+    text-align: center;
+  }
+  main section.front-end div.front-end-cont p {
+    padding: 1vh 0;
+    border: var(--header-footer-bg-color) 2px solid;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
   }
 }
 @media screen and (max-width: 801px) and (max-width: 501px) {
@@ -413,4 +470,12 @@ main section.styling div.styling-cont p a:hover {
   header .rect {
     fill: whitesmoke;
   }
+<<<<<<< HEAD
+=======
+}
+@media screen and (max-width: 401px) {
+  main section {
+    font-size: large;
+  }
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
 }/*# sourceMappingURL=style.css.map */

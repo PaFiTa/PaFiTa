@@ -31,6 +31,7 @@
         background-color 0.2s ease-in-out,
         color 0.3s ease-in-out;
 }
+<<<<<<< HEAD
 @keyframes logo-spin {
     from {
         transform: rotate(0deg);
@@ -39,6 +40,8 @@
         transform: rotate(360deg);
     }
 }
+=======
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
 header {
     position: fixed;
     top: 0;
@@ -65,9 +68,12 @@ header {
         justify-content: center;
         align-items: center;
         font-size: 3vh;
+<<<<<<< HEAD
         @media screen and (max-width: 801px) {
             display: none;
         }
+=======
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
         a {
             color: var(--text-color);
             text-decoration: none;
@@ -85,6 +91,7 @@ header {
     }
     .menu-icon {
         display: none;
+<<<<<<< HEAD
         @media screen and (max-width: 501px) {
             display: none;
         }
@@ -133,6 +140,41 @@ header {
     }
 }
 
+=======
+    }
+    .mobile-nav {
+        display: none;
+    }
+    .mobile-nav.top-menu {
+        display: flex;
+        border-radius: 0 0 0 25px;
+        flex-direction: column;
+        position: absolute;
+        top: 5vh;
+        right: 0;
+        width: 50vw;
+        background-color: var(--header-footer-bg-color);
+        -webkit-border-radius: 0 0 0 25px;
+        -moz-border-radius: 0 0 0 25px;
+        -ms-border-radius: 0 0 0 25px;
+        -o-border-radius: 0 0 0 25px;
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 2vh;
+            transition: background-color 0.3s ease-in-out;
+            &:hover {
+                cursor: pointer;
+                background-color: var(--main-bg-color);
+                filter: drop-shadow(2px 2px 2px var(--text-color));
+            }
+        }
+    }
+    .rect {
+        fill: black;
+    }
+}
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
 footer {
     position: fixed;
     bottom: 0;
@@ -157,6 +199,10 @@ footer {
 main {
     z-index: -1;
     width: 100vw;
+<<<<<<< HEAD
+=======
+    height: 90vh;
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
     position: absolute;
     top: 5vh;
     left: 0;
@@ -167,13 +213,17 @@ main {
     h1 {
         margin: 1vw;
         font-size: xxx-large;
+<<<<<<< HEAD
         @media screen and (max-width: 801px) {
             font-size: xx-large;
         }
+=======
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
     }
     section {
         font-size: xx-large;
         margin-right: 2.5vw;
+<<<<<<< HEAD
         margin: 2.5vw;
         margin-bottom: 5vh;
         @media screen and (max-width: 801px) {
@@ -195,11 +245,27 @@ main {
             outline: 5px solid var(--text-color);
             margin: 5vw;
             height: 30.5vh;
+=======
+    }
+    section.front-end {
+        margin: 2.5vw;
+        img.frontImg {
+            border-radius: 100%;
+            outline: 5px solid var(--text-color);
+            margin: 2.5vw;
+            margin-top: 10.05vh;
+            height: 20vw;
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
             transition: all 0.5s ease-in-out;
             -webkit-transition: all 0.5s ease-in-out;
             -moz-transition: all 0.5s ease-in-out;
             -ms-transition: all 0.5s ease-in-out;
             -o-transition: all 0.5s ease-in-out;
+<<<<<<< HEAD
+=======
+            filter: blur(5px) opacity(0.8);
+            -webkit-filter: blur(5px) opacity(0.8);
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
             float: left;
             -webkit-border-radius: 100%;
             -moz-border-radius: 100%;
@@ -208,9 +274,15 @@ main {
             &:hover {
                 cursor: pointer;
                 transition: all 0.5s ease-in-out;
+<<<<<<< HEAD
                 outline: 5px solid var(--header-footer-bg-color);
                 filter: drop-shadow(5px 5px 5px var(--text-color));
                 -webkit-filter: drop-shadow(5px 5px 5px var(--text-color));
+=======
+                outline: 5px solid var(var(--header-footer-bg-color));
+                filter: blur(0px) drop-shadow(5px 5px 5px var(--text-color)) opacity(1);
+                -webkit-filter: blur(0px) drop-shadow(5px 5px 5px var(--text-color)) opacity(1);
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
                 -webkit-transition: all 0.5s ease-in-out;
                 -moz-transition: all 0.5s ease-in-out;
                 -ms-transition: all 0.5s ease-in-out;
@@ -218,6 +290,10 @@ main {
             }
         }
         div.front-end-cont {
+<<<<<<< HEAD
+=======
+            font-size: 2rem;
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
             max-width: 100%;
             margin: 0 2.5vw;
             width: 60vw;
@@ -232,6 +308,7 @@ main {
             p {
                 max-height: 40.5vh;
                 overflow-y: scroll;
+<<<<<<< HEAD
                 max-width: 60vw;
                 @media screen and (max-width: 801px) {
                     max-width: 90vw;
@@ -244,6 +321,8 @@ main {
                     -ms-border-radius: 5px;
                     -o-border-radius: 5px;
                 }
+=======
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
                 a {
                     text-decoration: none;
                     &:hover {
@@ -263,6 +342,7 @@ main {
         }
     }
     section.styling {
+<<<<<<< HEAD
         width: 96vw;
         margin: 2.5vw;
         margin-bottom: 5vh;
@@ -350,11 +430,37 @@ main {
                         -o-transition: transform 0.3s ease-in-out;
                     }
                 }
+=======
+        display: none;
+    }
+}
+
+@media (max-width: 801px) {
+    header {
+        nav {
+            display: none;
+        }
+        .menu-icon {
+            display: block;
+            position: absolute;
+            right: 2vh;
+            width: 3vh;
+            max-height: 5vh;
+            cursor: pointer;
+            span {
+                width: 3vh;
+                height: 1vh;
+                background: none;
+                transition: 0.4s;
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
             }
         }
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
 @media screen and (max-width: 801px) {
     header {
         h1.menuName {
@@ -376,8 +482,25 @@ main {
                 margin-top: auto;
             }
             div.front-end-cont {
+<<<<<<< HEAD
                 float: none;
                 width: 100%;
+=======
+                h2 {
+                    text-align: center;
+                }
+                float: none;
+                width: 90vw;
+                p {
+                    padding: 1vh 0;
+                    border: var(--header-footer-bg-color) 2px solid;
+                    border-radius: 25px;
+                    -webkit-border-radius: 25px;
+                    -moz-border-radius: 25px;
+                    -ms-border-radius: 25px;
+                    -o-border-radius: 25px;
+                }
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
             }
         }
     }
@@ -410,3 +533,13 @@ main {
         }
     }
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 401px) {
+    main {
+        section {
+            font-size: large;
+        }
+    }
+}
+>>>>>>> 5e4418669ac26d0ea48ca10d6f2bdd9199c00e9c
