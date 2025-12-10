@@ -1,3 +1,5 @@
+@use "form";
+
 :root {
     --main-bg-color: #f0f0f0;
     --header-footer-bg-color: #dddddd;
@@ -130,6 +132,9 @@ header {
         -ms-border-radius: 0 0 25px 25px;
         -o-border-radius: 0 0 25px 25px;
     }
+    @media screen and (min-width: 801px) {
+        display: none;
+    }
     a {
         color: var(--text-color);
         text-decoration: none;
@@ -171,6 +176,7 @@ footer {
     }
 }
 main {
+    overflow-x: hidden;
     z-index: -1;
     width: 100vw;
     position: absolute;
