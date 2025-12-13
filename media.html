@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Media — 7 Cudów w Web Dev</title>
+        <meta name="author" content="PaFiTa">
+        <meta name="keywords" content="7 cudow, galeria, media, zdjęcia">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <script src="media.js" defer></script>
+    </head>
+    <body>
+        <header id="header">
+            <img src="data/PaFiTa.svg" alt class="logo">
+            <nav class="topNav">
+                <a href="index.html#header">Wstęp</a>
+                <a href="stats.html#header">Statystyki</a>
+                <a href="media.html#header">Media</a>
+                <a href="form.html#header">Formulaż</a>
+            </nav>
+            <h1 class="menuName">Media</h1>
+            <div class="menu-icon" onclick="topMenu()">
+                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 1" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto"><rect class="rect" x="0" y="0" width="5" height="1" rx="0.5" ry="0.5" /></svg></span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 1" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto"><rect class="rect" x="0" y="0" width="5" height="1" rx="0.5" ry="0.5" /></svg></span>
+                <span class="span3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 1" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto"><rect class="rect" x="0" y="0" width="5" height="1" rx="0.5" ry="0.5" /></svg></span>
+            </div>
+            <nav id="menu" class="mobile-nav">
+                <a href="index.html#header">Intro</a>
+                <a href="stats.html#header">Statystyki</a>
+                <a href="media.html#header">Media</a>
+                <a href="form.html#header">Formulaż</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Galeria automatyczna</h2>
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <div class="mySlide fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="data/img/CSS.png" alt="CSS" class="slide-img">
+                    <div class="caption">CSS</div>
+                </div>
+
+                <div class="mySlide fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="data/img/HTML.png" alt="HTML" class="slide-img">
+                    <div class="caption">HTML</div>
+                </div>
+
+                <div class="mySlide fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="data/img/JS.png" alt="JavaScript" class="slide-img">
+                    <div class="caption">JavaScript</div>
+                </div>
+
+                <div class="mySlide fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="data/img/React.png" alt="React" class="slide-img">
+                    <div class="caption">React</div>
+                </div>
+
+                <div class="mySlide fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="data/img/Sass.png" alt="SASS" class="slide-img">
+                    <div class="caption">SASS</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+
+            <h3>Wideo</h3>
+            <div class="filmBox">
+                <iframe src="https://www.youtube.com/embed/3JluqTojuME" title="Short tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <h3>Mapa</h3>
+            <!-- Simple Google Maps embed (no API key required for standard embed) -->
+            <div class="mapBox">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.83024434905!2d21.01222801583318!3d52.22967597978407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccb2f1f4d9d1%3A0x400e1a6c6f9a0b0!2sWarszawa!5e0!3m2!1spl!2spl!4v1600000000000!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </main>
+
+        <footer>
+            <p>Autor: PaFiTa | Klasa: XYZ</p>
+        </footer>
+    </body>
+</html>
