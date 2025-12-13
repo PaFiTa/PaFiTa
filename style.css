@@ -273,24 +273,69 @@ header img.logo:hover {
   animation-play-state: paused;
   filter: drop-shadow(5px 5px 5px var(--text-color));
 }
-header nav {
-  display: flex;
+header nav.topNav {
   justify-content: center;
   align-items: center;
   font-size: 3vh;
 }
 @media screen and (max-width: 801px) {
-  header nav {
+  header nav.topNav {
     display: none;
   }
 }
-header nav a {
+header nav.topNav a {
   color: var(--text-color);
   text-decoration: none;
   margin: 0 2vh;
   transition: transform 0.3s ease-in-out;
 }
-header nav a:hover {
+header nav.topNav a:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px var(--text-color));
+  transform: scale(1.1);
+}
+header nav.mobile-nav {
+  display: none;
+  border-radius: 0 0 0 25px;
+  flex-direction: column;
+  position: absolute;
+  top: 5vh;
+  right: 0;
+  z-index: 10;
+  width: 50vw;
+  background-color: var(--header-footer-bg-color);
+  -webkit-border-radius: 0 0 0 25px;
+  -moz-border-radius: 0 0 0 25px;
+  -ms-border-radius: 0 0 0 25px;
+  -o-border-radius: 0 0 0 25px;
+}
+@media screen and (max-width: 800px) {
+  header nav.mobile-nav {
+    display: flex;
+  }
+}
+@media screen and (max-width: 501px) {
+  header nav.mobile-nav {
+    display: none;
+    width: 100vw;
+    border-radius: 0 0 25px 25px;
+    -webkit-border-radius: 0 0 25px 25px;
+    -moz-border-radius: 0 0 25px 25px;
+    -ms-border-radius: 0 0 25px 25px;
+    -o-border-radius: 0 0 25px 25px;
+  }
+  header nav.mobile-nav.active {
+    display: flex;
+  }
+}
+header nav.mobile-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 2vh;
+  font-size: xx-large;
+  transition: transform 0.3s ease-in-out;
+}
+header nav.mobile-nav a:hover {
   cursor: pointer;
   filter: drop-shadow(2px 2px 2px var(--text-color));
   transform: scale(1.1);
@@ -321,51 +366,6 @@ header .menu-icon {
   header .menu-icon span.span3 {
     display: none;
   }
-}
-
-.mobile-nav {
-  display: none;
-}
-
-.mobile-nav.top-menu {
-  display: flex;
-  border-radius: 0 0 0 25px;
-  flex-direction: column;
-  position: absolute;
-  top: 5vh;
-  right: 0;
-  width: 50vw;
-  background-color: var(--header-footer-bg-color);
-  -webkit-border-radius: 0 0 0 25px;
-  -moz-border-radius: 0 0 0 25px;
-  -ms-border-radius: 0 0 0 25px;
-  -o-border-radius: 0 0 0 25px;
-}
-@media screen and (max-width: 501px) {
-  .mobile-nav.top-menu {
-    width: 100vw;
-    border-radius: 0 0 25px 25px;
-    -webkit-border-radius: 0 0 25px 25px;
-    -moz-border-radius: 0 0 25px 25px;
-    -ms-border-radius: 0 0 25px 25px;
-    -o-border-radius: 0 0 25px 25px;
-  }
-}
-@media screen and (min-width: 801px) {
-  .mobile-nav.top-menu {
-    display: none;
-  }
-}
-.mobile-nav.top-menu a {
-  color: var(--text-color);
-  text-decoration: none;
-  padding: 2vh;
-  transition: background-color 0.3s ease-in-out;
-}
-.mobile-nav.top-menu a:hover {
-  cursor: pointer;
-  background-color: var(--main-bg-color);
-  filter: drop-shadow(2px 2px 2px var(--text-color));
 }
 
 .rect {
@@ -401,7 +401,7 @@ footer a:hover {
 
 main {
   overflow-x: hidden;
-  z-index: -1;
+  z-index: -10;
   width: 100vw;
   position: absolute;
   top: 5vh;
@@ -641,8 +641,13 @@ main section.styling div.styling-cont p a:hover {
     display: none;
   }
 }
+@media screen and (min-width: 801px) {
+  .mobile-nav.top-menu {
+    display: none;
+  }
+}
 @media screen and (max-width: 501px) {
-  header .mobile-nav.top-menu {
+  .mobile-nav.top-menu {
     width: 100vw;
     border-radius: 0 0 25px 25px;
     -webkit-border-radius: 0 0 25px 25px;

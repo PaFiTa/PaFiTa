@@ -41,6 +41,7 @@
         transform: rotate(360deg);
     }
 }
+
 header {
     position: fixed;
     top: 0;
@@ -62,8 +63,7 @@ header {
             filter: drop-shadow(5px 5px 5px var(--text-color));
         }
     }
-    nav {
-        display: flex;
+    nav.topNav {
         justify-content: center;
         align-items: center;
         font-size: 3vh;
@@ -74,6 +74,49 @@ header {
             color: var(--text-color);
             text-decoration: none;
             margin: 0 2vh;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                cursor: pointer;
+                filter: drop-shadow(2px 2px 2px var(--text-color));
+                transform: scale(1.1);
+            }
+        }
+    }
+    nav.mobile-nav {
+        display: none;
+        border-radius: 0 0 0 25px;
+        flex-direction: column;
+        position: absolute;
+        top: 5vh;
+        right: 0;
+        z-index: 10;
+        width: 50vw;
+        background-color: var(--header-footer-bg-color);
+        -webkit-border-radius: 0 0 0 25px;
+        -moz-border-radius: 0 0 0 25px;
+        -ms-border-radius: 0 0 0 25px;
+        -o-border-radius: 0 0 0 25px;
+        @media screen and (max-width: 800px) {
+            display: flex;
+        }
+        @media screen and (max-width: 501px) {
+            display: none;
+            width: 100vw;
+            border-radius: 0 0 25px 25px;
+            -webkit-border-radius: 0 0 25px 25px;
+            -moz-border-radius: 0 0 25px 25px;
+            -ms-border-radius: 0 0 25px 25px;
+            -o-border-radius: 0 0 25px 25px;
+            &.active {
+                display: flex;
+            }
+        }
+
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 2vh;
+            font-size: xx-large;
             transition: transform 0.3s ease-in-out;
             &:hover {
                 cursor: pointer;
@@ -108,45 +151,6 @@ header {
         }
     }
 }
-.mobile-nav {
-    display: none;
-}
-.mobile-nav.top-menu {
-    display: flex;
-    border-radius: 0 0 0 25px;
-    flex-direction: column;
-    position: absolute;
-    top: 5vh;
-    right: 0;
-    width: 50vw;
-    background-color: var(--header-footer-bg-color);
-    -webkit-border-radius: 0 0 0 25px;
-    -moz-border-radius: 0 0 0 25px;
-    -ms-border-radius: 0 0 0 25px;
-    -o-border-radius: 0 0 0 25px;
-    @media screen and (max-width: 501px) {
-        width: 100vw;
-        border-radius: 0 0 25px 25px;
-        -webkit-border-radius: 0 0 25px 25px;
-        -moz-border-radius: 0 0 25px 25px;
-        -ms-border-radius: 0 0 25px 25px;
-        -o-border-radius: 0 0 25px 25px;
-    }
-    @media screen and (min-width: 801px) {
-        display: none;
-    }
-    a {
-        color: var(--text-color);
-        text-decoration: none;
-        padding: 2vh;
-        transition: background-color 0.3s ease-in-out;
-        &:hover {
-            cursor: pointer;
-            background-color: var(--main-bg-color);
-            filter: drop-shadow(2px 2px 2px var(--text-color));
-        }
-    }
-}
 .rect {
     fill: black;
     @media screen and (prefers-color-scheme: light) {
@@ -177,7 +181,7 @@ footer {
 }
 main {
     overflow-x: hidden;
-    z-index: -1;
+    z-index: -10;
     width: 100vw;
     position: absolute;
     top: 5vh;
@@ -413,18 +417,22 @@ main {
         }
     }
 }
-@media screen and (max-width: 501px) {
-    header {
-        .mobile-nav.top-menu {
-            width: 100vw;
-            border-radius: 0 0 25px 25px;
-            -webkit-border-radius: 0 0 25px 25px;
-            -moz-border-radius: 0 0 25px 25px;
-            -ms-border-radius: 0 0 25px 25px;
-            -o-border-radius: 0 0 25px 25px;
-        }
+@media screen and (min-width: 801px) {
+    .mobile-nav.top-menu {
+        display: none;
     }
 }
+@media screen and (max-width: 501px) {
+    .mobile-nav.top-menu {
+        width: 100vw;
+        border-radius: 0 0 25px 25px;
+        -webkit-border-radius: 0 0 25px 25px;
+        -moz-border-radius: 0 0 25px 25px;
+        -ms-border-radius: 0 0 25px 25px;
+        -o-border-radius: 0 0 25px 25px;
+    }
+}
+
 @media screen and (prefers-color-scheme: dark) {
     header {
         .rect {
